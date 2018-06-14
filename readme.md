@@ -4,8 +4,8 @@ Document and share experiences regarding compatibility problems caused by Turbol
 
 ## Browse
 
-- Facebook
-- Google Analytics
+- [Facebook](https://github.com/formaweb/turbofix/blob/master/docs/facebook.md)
+- [Google Analytics](https://github.com/formaweb/turbofix/blob/master/docs/google-analytics.md)
 
 ## Donating
 
