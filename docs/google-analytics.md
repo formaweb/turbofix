@@ -50,7 +50,7 @@ This library expose the `push` and `updateLocation` methods, that you can use to
 By default, we usually instantiate the library in the window scope and dispatch the address change when the page is updated with Turbolinks.
 
 ``` js
-(function(document) {
+(function(document, window) {
   var firstPageview = true;
 
   function ready(event) {
@@ -64,8 +64,8 @@ By default, we usually instantiate the library in the window scope and dispatch 
 
     firstPageView = false;
   }
-});
-
-document.addEventListener('DOMContentLoaded', ready);
-document.addEventListener('turbolinks:load', update);
+  
+  document.addEventListener('DOMContentLoaded', ready);
+  document.addEventListener('turbolinks:load', update);
+}(document, window));
 ```
