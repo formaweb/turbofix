@@ -4,6 +4,7 @@ Document and share experiences regarding compatibility problems caused by Turbol
 
 ## Browse
 
+- [AdSense](https://github.com/formaweb/turbofix/blob/master/docs/adsense.md)
 - [Facebook](https://github.com/formaweb/turbofix/blob/master/docs/facebook.md)
 - [Google Analytics](https://github.com/formaweb/turbofix/blob/master/docs/google-analytics.md)
 
