@@ -16,8 +16,8 @@ Create the `facebook.js` component.
 
 ``` js
 var Facebook = function(identifier, version) {
-  var _queue = [],
-      _isLoaded = false;
+  var _queue = [];
+  var _isLoaded = false;
 
   function push(callback) {
     if (_isLoaded) {
@@ -61,7 +61,7 @@ var Facebook = function(identifier, version) {
 By default, we instantiate our library, which will initialize Facebook and will send pageview event and parse plugins on page change. 
 
 ``` js
-(function(document) {
+(function(window, document) {
   function ready(event) {
     var identifier = document.querySelector('[property="fb:app_id"]').content;
 
@@ -74,8 +74,8 @@ By default, we instantiate our library, which will initialize Facebook and will 
       window.facebook.updateLocation();
     }
   }
-});
-
-document.addEventListener('DOMContentLoaded', ready);
-document.addEventListener('turbolinks:load', update);
+  
+  document.addEventListener('DOMContentLoaded', ready);
+  document.addEventListener('turbolinks:load', update);
+}(window, document));
 ```
