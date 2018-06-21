@@ -11,8 +11,7 @@ Configure the [asynchronous ad code](https://support.google.com/adsense/answer/3
 Put the `<script>` tag inside the `<head>`.
 
 ``` html
-<script src="//pagead2.googlesyndication.com/
-pagead/js/adsbygoogle.js" async></script>
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script>
 ```
 
 Create the `adsense.js` component.
